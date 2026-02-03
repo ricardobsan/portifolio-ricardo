@@ -1,0 +1,62 @@
+/* ======================================================================
+   TEMA GLOBAL – FONTE ÚNICA DE CORES
+   FUNCIONA EM: ANDROID / iOS / CHROME / FIREFOX
+   ====================================================================== */
+
+:root {
+  /* =====================
+     PRIMARY
+     ===================== */
+  --ion-color-primary: #0468ac;
+  --ion-color-primary-rgb: 61, 4, 114;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #350364;
+  --ion-color-primary-tint: #55218a;
+
+  /* =====================
+     SECONDARY
+     ===================== */
+  --ion-color-secondary: #f5c400;
+  --ion-color-secondary-rgb: 245, 196, 0;
+  --ion-color-secondary-contrast: #1a1b1d;
+  --ion-color-secondary-contrast-rgb: 26, 27, 29;
+  --ion-color-secondary-shade: #d8ac00;
+  --ion-color-secondary-tint: #f7ce1a;
+
+  /* =====================
+     TERTIARY
+     ===================== */
+  --ion-color-tertiary: #423e14;
+  --ion-color-tertiary-rgb: 66, 62, 20;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+
+  /* =====================
+     BASE – LIGHT
+     ===================== */
+  --ion-background-color: #ebeaea;
+  --ion-text-color: #1a1b1d;
+
+  --ion-color-step-50: #f3f4f6;
+  --ion-color-step-100: #e5e7eb;
+
+  /* =====================
+     CUSTOM
+     ===================== */
+  --highlight-color: var(--ion-color-primary);
+}
+
+/* ======================================================================
+   DARK MODE – MANUAL (BOTÃO LUA/SOL)
+   ====================================================================== */
+
+body.dark {
+  --ion-background-color: #0f172a;
+  --ion-text-color: #e5e7eb;
+
+  --ion-color-step-50: #020617;
+  --ion-color-step-100: #1e293b;
+
+  --highlight-color: var(--ion-color-secondary);
+}

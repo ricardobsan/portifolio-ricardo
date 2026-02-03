@@ -1,0 +1,67 @@
+/*
+ * App Global CSS
+ * ============================================================================
+ * COMPATÍVEL COM ANDROID / iOS / CHROME / FIREFOX
+ * ============================================================================
+ */
+
+/* =======================
+   IONIC CORE
+   ======================= */
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* =======================
+   UTILS
+   ======================= */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/* =======================
+   DARK MODE (MANUAL)
+   ======================= */
+@import "@ionic/angular/css/palettes/dark.class.css";
+
+/* =======================
+   FONT
+   ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* =======================
+   GLOBAL RESET
+   ======================= */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  background: var(--ion-background-color);
+  color: var(--ion-text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =======================
+   LAYOUT
+   ======================= */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight {
+  color: var(--highlight-color);
+  font-weight: 600;
+}
+

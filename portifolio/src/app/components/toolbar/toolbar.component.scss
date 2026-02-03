@@ -1,0 +1,39 @@
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+
+/* por padrão */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+ion-icon {
+  font-size: 22px;
+  color: var(--highlight-color);
+}
+
+
+
+/* mobile */
+@media (max-width: 768px) {
+  .mobile-only {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+}
+
