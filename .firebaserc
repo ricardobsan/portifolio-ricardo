@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "portifolio-ricardo"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
