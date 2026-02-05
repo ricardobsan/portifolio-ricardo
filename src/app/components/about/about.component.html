@@ -1,28 +1,112 @@
 <div class="container">
   <ion-grid>
     <ion-row>
-      <ion-col size="12" size-md="6">
+<ion-col size="12" size-md="6">
+<div class="about-wrapper">
+  <h1 class="tech-title highlight">Sobre Mim</h1>
 
-        <h1> 👋 Sobre Mim </h1>
-        <p> Olá! Meu nome é <span class="highlight">Ricardo B. Santos.</span>
+  <p class="about-text" [class.expanded]="aboutExpanded">
+    Olá! Meu nome é <span class="highlight">Ricardo B. Santos.</span>
+    Sou graduado em Análise e Desenvolvimento de Sistemas e atualmente curso
+    Sistemas para Internet, com foco em desenvolvimento web e mobile.
+    Atuo no desenvolvimento de interfaces utilizando HTML, CSS e JavaScript,
+    com experiência em Angular e Ionic, sempre buscando criar aplicações
+    organizadas, responsivas e com boa experiência para o usuário.
+    Tenho seis anos de experiência na área de Suporte, o que contribuiu para
+    o desenvolvimento de habilidades como análise de problemas, comunicação
+    clara e trabalho em equipe — competências que aplico diretamente no
+    desenvolvimento de soluções digitais.
+    Sou movido por aprendizado contínuo, estou sempre explorando novas
+    tecnologias, aprimorando meu inglês técnico e buscando evoluir como
+    desenvolvedor Front-End, contribuindo com projetos que gerem impacto real.
+  </p>
 
-        Sou graduado em Análise e Desenvolvimento de Sistemas e atualmente curso Sistemas para Internet, com foco em
-        desenvolvimento web e mobile.
+  <!-- BOTÃO SÓ NO MOBILE -->
+  <button
+    class="read-more "
+    (click)="aboutExpanded = !aboutExpanded"
+  >
+    {{ aboutExpanded ? 'Mostrar menos ↑' : 'Continuar lendo ↓' }}
+  </button>
+</div>
 
-        Atuo no desenvolvimento de interfaces utilizando HTML, CSS e JavaScript, com experiência em Angular e Ionic,
-        sempre
-        buscando criar aplicações organizadas, responsivas e com boa experiência para o usuário.
+</ion-col>
+      <ion-col size="12" size-md="6" class="col-2">
 
-        Tenho seis anos de experiência na área de Suporte, o que contribuiu para o desenvolvimento de habilidades como
-        análise de problemas, comunicação clara e trabalho em equipe — competências que aplico diretamente no
-        desenvolvimento de soluções digitais.
+        <div class="tech-wrapper">
 
-        Sou movido por aprendizado contínuo, estou sempre explorando novas tecnologias, aprimorando meu inglês técnico
-        e
-        buscando evoluir como desenvolvedor Front-End, contribuindo com projetos que gerem impacto real.</p>
+          <h2 class="tech-title highlight">Tecnologias</h2>
+
+          <div class="tech-list">
+            <div class="tech-card">
+              <img src="../../../assets/icon/angular.svg" alt="Angular" />
+              <span>Angular</span>
+            </div>
+
+            <div class="tech-card">
+              <img src="../../../assets/icon/ionic.svg" alt="Ionic" />
+              <span>Ionic</span>
+            </div>
+
+            <div class="tech-card">
+              <img src="../../../assets/icon/javascript.svg" alt="JavaScript" />
+              <span>JavaScript</span>
+            </div>
+
+
+            <div class="tech-card">
+              <img src="../../../assets/icon/html.svg" alt="HTML5" />
+              <span>HTML5</span>
+            </div>
+
+            <div class="tech-card">
+              <img src="../../../assets/icon/css.svg" alt="CSS3" />
+              <span>CSS3</span>
+            </div>
+
+            <div class="tech-card">
+              <img src="../../../assets/icon/firebase.svg" alt="Firebase" />
+              <span>Firebase</span>
+            </div>
+          </div>
+
+        </div>
+
+<div class="cv-wrapper">
+
+  <h2 class="tech-title highlight">Currículo</h2>
+
+  <div class="cv-buttons">
+    <ion-button
+      fill="solid"
+      href="assets/cv/Ricardo Batista dos Santos.pdf"
+      target="_blank"
+      class="btn-1"
+    >
+      <ion-icon slot="start" name="eye-outline"></ion-icon>
+      Visualizar
+    </ion-button>
+
+    <ion-button
+      fill="solid"
+      href="assets/cv/Ricardo Batista dos Santos.pdf"
+      download
+      class="btn-2"
+    >
+      <ion-icon slot="start" name="download-outline"></ion-icon>
+      Download
+    </ion-button>
+  </div>
+
+</div>
+
+
+
+
+
+
 
       </ion-col>
-      <ion-col size="12" size-md="6"></ion-col>
     </ion-row>
   </ion-grid>
 

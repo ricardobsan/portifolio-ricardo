@@ -41,7 +41,7 @@
 }
 
 html,
-body {
+body, h1, span,h2,h3,h4,h5, ion-text,p {
   background: var(--ion-background-color);
   color: var(--ion-text-color);
   font-family: 'Poppins', sans-serif;

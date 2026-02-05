@@ -1,3 +1,7 @@
+.container{
+   min-height: 500px;
+}
+
 .img-header {
   width: 100%;
   max-width: 350px;
@@ -15,21 +19,15 @@
   object-position: top;
 }
 
-.row {
-  margin-top: 15px;
-}
-
 .col-1 {
   display: flex;
   align-items: center;
-  justify-content: center;
+
 }
 
 .col-2 {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 350px;
   max-width: 100%;
   word-wrap: break-word;
 }
@@ -40,7 +38,6 @@
   padding: 0 24px;
   text-align: center;
   margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -53,15 +50,7 @@
 .text-col ion-text {
   display: block;
   font-size: 1.6rem;
-  --color: inherit;
 }
-
-
-.text-col p:last-child {
-  font-size: 1.1rem;
-
-}
-
 
 
 @media (max-width: 768px) {
