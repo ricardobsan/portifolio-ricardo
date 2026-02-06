@@ -16,13 +16,13 @@
 }
 
 .about-wrapper p {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.65;
   margin: 0 auto;
 }
 
 .about-text {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.65;
   margin: 0 auto;
   transition: all 0.3s ease;
@@ -122,11 +122,11 @@ ion-row {
 }
 
 .btn-1 {
-  --background: #f59e0b;
+  --background: var(--ion-color-warning);
 }
 
 .btn-2 {
-  --background: #2563eb;
+  --background:var(--ion-color-info);
 }
 
 .read-more {
@@ -134,7 +134,7 @@ ion-row {
   background: none;
   border: none;
   padding: 0;
-  color: #5d6ae6;
+  color:var(--ion-color-info);
   font-weight: 600;
   font-size: 0.85rem;
   cursor: pointer;
@@ -158,12 +158,27 @@ ion-row {
 @media (hover: hover) {
   .btn-1:hover {
     transform: translateY(-2px);
-    --background: #ffa304;
+    --background: var(--ion-color-warning-tint);
   }
 
   .btn-2:hover {
-    --background: #0f50dd;
+    --background: var(--ion-color-info-tint);
     transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 1060px) {
+  .about-text {
+    line-height: 1.6;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+   .about-text.expanded {
+    -webkit-line-clamp: unset;
+    display: block;
   }
 }
 
@@ -178,7 +193,7 @@ ion-row {
   }
 
   .about-text {
-    font-size: 0.95rem;
+  
     line-height: 1.6;
     max-width: 100%;
     display: -webkit-box;
@@ -202,7 +217,7 @@ ion-row {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1060px) {
   .read-more {
     display: none;
   }

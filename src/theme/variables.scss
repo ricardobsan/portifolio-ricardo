@@ -32,6 +32,27 @@
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
 
+    /* =====================
+     INFO
+     ===================== */
+  --ion-color-info: #2563eb;
+  --ion-color-info-rgb: 37, 99, 235;
+  --ion-color-info-contrast: #ffffff;
+  --ion-color-info-contrast-rgb: 255, 255, 255;
+  --ion-color-info-shade: #2057cf;
+  --ion-color-info-tint: #3b74ee;
+
+    /* =====================
+     WARNING
+     ===================== */
+  --ion-color-warning: #f59e0b;
+  --ion-color-warning-rgb: 245, 158, 11;
+  --ion-color-warning-contrast: #1a1b1d;
+  --ion-color-warning-contrast-rgb: 26, 27, 29;
+  --ion-color-warning-shade: #d48809;
+  --ion-color-warning-tint: #f7aa23;
+
+
   /* =====================
      BASE – LIGHT
      ===================== */
@@ -51,7 +72,7 @@
    DARK MODE – MANUAL (BOTÃO LUA/SOL)
    ====================================================================== */
 
-body.dark {
+:root.dark {
   --ion-background-color: #0f172a;
   --ion-text-color: #e5e7eb;
 
@@ -59,4 +80,8 @@ body.dark {
   --ion-color-step-100: #1e293b;
 
   --highlight-color: var(--ion-color-secondary);
+}
+
+:root.dark ion-menu-button {
+  --color: var(--ion-color-tertiary-contrast);
 }

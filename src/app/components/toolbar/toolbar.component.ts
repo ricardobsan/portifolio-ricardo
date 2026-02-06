@@ -30,18 +30,19 @@ export class ToolbarComponent implements OnInit {
   }
 
   toggleTheme() {
-    this.isDark ? this.enableLight() : this.enableDark();
-  }
+  this.isDark ? this.enableLight() : this.enableDark();
+}
 
-  private enableDark() {
-    document.body.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-    this.isDark = true;
-  }
+private enableDark() {
+  document.documentElement.classList.add('dark'); // 🔥 AQUI
+  localStorage.setItem('theme', 'dark');
+  this.isDark = true;
+}
 
-  private enableLight() {
-    document.body.classList.remove('dark');
-    localStorage.setItem('theme', 'light');
-    this.isDark = false;
-  }
+private enableLight() {
+  document.documentElement.classList.remove('dark'); // 🔥 AQUI
+  localStorage.setItem('theme', 'light');
+  this.isDark = false;
+}
+
 }
