@@ -92,6 +92,8 @@ ion-card-content {
 
 ion-chip {
   --border-radius: 50px !important; 
+  color: var(--ion-color-primary-contrast);
+  --background:#f5c4002d;
   border-radius: 50px !important; 
   border: 1px solid var(--ion-color-secondary);
   font-size: 0.72rem;
