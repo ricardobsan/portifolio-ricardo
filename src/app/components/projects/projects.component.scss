@@ -52,6 +52,12 @@ ion-card-content {
   line-height: 1.45;
   margin-bottom: 12px;
   opacity: 0.85;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ==========================
@@ -77,14 +83,24 @@ ion-card-content {
   flex: 1;
   --border-radius: 10px;
 }
+.techs ion-chip {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
 ion-chip {
-  --border-radius: 999px;
-  --padding-start: 10px;
-  --padding-end: 10px;
-
+  --border-radius: 50px !important; 
+  border-radius: 50px !important; 
   border: 1px solid var(--ion-color-secondary);
   font-size: 0.72rem;
+  height: auto;
+  padding: 4px 10px;
+}
+
+ion-chip::part(native) {
+  border-radius: 50px !important;
 }
 
 
@@ -198,7 +214,7 @@ ion-card-content p {
   .project-card {
     margin: 0 !important;
     width: 100%;
-    max-height: none !important; 
+    max-height: 430px !important; 
     min-height: 430px; 
   }
 }
