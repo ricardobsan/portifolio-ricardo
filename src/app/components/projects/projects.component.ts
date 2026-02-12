@@ -6,7 +6,7 @@ import { logoGithub, openOutline, } from 'ionicons/icons';
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA] // Importante adicionar aqui!
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProjectsComponent implements OnInit {
 
