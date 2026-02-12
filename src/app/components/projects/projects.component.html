@@ -1,0 +1,59 @@
+<div class="container">
+  <section class="projects-section">
+
+    <h2 class="tech-title highlight">Projects</h2>
+
+    <ion-grid class="projects-wrapper">
+      <ion-row class="scroll-horizontal">
+
+        @for (project of projects; track project.title) {
+        <ion-col size="12" size-sm="6" size-lg="4" size-xl="3">
+          <ion-card class="project-card">
+
+            <img [src]="project.image" [alt]="project.title" class="project-image" />
+
+            <ion-card-header>
+              <p >{{ project.title }}</p>
+            </ion-card-header>
+
+            <ion-card-content>
+              <p class="description">
+                {{ project.description }}
+              </p>
+
+              @if (project.techs?.length) {
+              <div class="techs">
+                @for (tech of project.techs; track tech) {
+                <ion-chip>{{ tech }}</ion-chip>
+                }
+              </div>
+              }
+            </ion-card-content>
+
+            <div class="project-actions">
+
+              @if (project.githubUrl) {
+              <ion-button fill="solid" class="btn-1" href="{{ project.githubUrl }}" target="_blank">
+                <ion-icon slot="start" name="logo-github"></ion-icon>
+                GitHub
+              </ion-button>
+              }
+
+              @if (project.liveUrl) {
+              <ion-button fill="solid" class="btn-2" href="{{ project.liveUrl }}" target="_blank">
+                <ion-icon slot="start" name="open-outline"></ion-icon>
+                Site
+              </ion-button>
+              }
+
+            </div>
+
+
+          </ion-card>
+        </ion-col>
+        }
+
+      </ion-row>
+    </ion-grid>
+  </section>
+</div>

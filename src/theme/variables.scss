@@ -4,68 +4,69 @@
    ====================================================================== */
 
 :root {
-  /* =====================
+   /* =====================
      PRIMARY
      ===================== */
-  --ion-color-primary: #4f018ff5;
-  --ion-color-primary-rgb: 61, 4, 114;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #350364;
-  --ion-color-primary-tint: #55218a;
+   --ion-color-primary: #4f018ff5;
+   --ion-color-primary-rgb: 61, 4, 114;
+   --ion-color-primary-contrast: #ffffff;
+   --ion-color-primary-contrast-rgb: 255, 255, 255;
+   --ion-color-primary-shade: #350364;
+   --ion-color-primary-tint: #55218a;
 
-  /* =====================
+   /* =====================
      SECONDARY
      ===================== */
-  --ion-color-secondary: #f5c400;
-  --ion-color-secondary-rgb: 245, 196, 0;
-  --ion-color-secondary-contrast: #1a1b1d;
-  --ion-color-secondary-contrast-rgb: 26, 27, 29;
-  --ion-color-secondary-shade: #d8ac00;
-  --ion-color-secondary-tint: #f7ce1a;
+   --ion-color-secondary: #f5c400;
+   --ion-color-secondary-rgb: 245, 196, 0;
+   --ion-color-secondary-contrast: #1a1b1d;
+   --ion-color-secondary-contrast-rgb: 26, 27, 29;
+   --ion-color-secondary-shade: #d8ac00;
+   --ion-color-secondary-tint: #f7ce1a;
 
-  /* =====================
+   /* =====================
      TERTIARY
      ===================== */
-  --ion-color-tertiary: #423e14;
-  --ion-color-tertiary-rgb: 66, 62, 20;
-  --ion-color-tertiary-contrast: #ffffff;
-  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-
-    /* =====================
+   --ion-color-tertiary: #2563eb;
+   --ion-color-tertiary-rgb: 37, 99, 235;
+   --ion-color-tertiary-contrast: #ffffff;
+   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+   --ion-color-tertiary-shade: #1e4fd6;
+   --ion-color-tertiary-tint: #3b74ee;
+   /* =====================
      INFO
      ===================== */
-  --ion-color-info: #2563eb;
-  --ion-color-info-rgb: 37, 99, 235;
-  --ion-color-info-contrast: #ffffff;
-  --ion-color-info-contrast-rgb: 255, 255, 255;
-  --ion-color-info-shade: #2057cf;
-  --ion-color-info-tint: #3b74ee;
+   --ion-color-info: #2563eb;
+   --ion-color-info-rgb: 37, 99, 235;
+   --ion-color-info-contrast: #ffffff;
+   --ion-color-info-contrast-rgb: 255, 255, 255;
+   --ion-color-info-shade: #2057cf;
+   --ion-color-info-tint: #3b74ee;
 
-    /* =====================
+   /* =====================
      WARNING
      ===================== */
-  --ion-color-warning: #f59e0b;
-  --ion-color-warning-rgb: 245, 158, 11;
-  --ion-color-warning-contrast: #1a1b1d;
-  --ion-color-warning-contrast-rgb: 26, 27, 29;
-  --ion-color-warning-shade: #d48809;
-  --ion-color-warning-tint: #f7aa23;
+   --ion-color-warning: #f59e0b;
+   --ion-color-warning-rgb: 245, 158, 11;
+   --ion-color-warning-contrast: #1a1b1d;
+   --ion-color-warning-contrast-rgb: 26, 27, 29;
+   --ion-color-warning-shade: #d48809;
+   --ion-color-warning-tint: #f7aa23;
 
 
-  /* =====================
+   /* =====================
      BASE – LIGHT
      ===================== */
-  --ion-background-color: #ebeaea;
-  --ion-text-color: #1a1b1d;
+   --ion-background-color: #ebeaea;
+   --ion-text-color: #1a1b1d;
 
-  --ion-color-step-50: #f3f4f6;
-  --ion-color-step-100: #e5e7eb;
+   --ion-color-step-50: #f3f4f6;
+   --ion-color-step-100: #e5e7eb;
 
-  /* =====================
+   /* =====================
      CUSTOM
      ===================== */
-  --highlight-color: var(--ion-color-primary);
+   --highlight-color: var(--ion-color-primary);
 }
 
 /* ======================================================================
@@ -73,15 +74,15 @@
    ====================================================================== */
 
 :root.dark {
-  --ion-background-color: #0f172a;
-  --ion-text-color: #e5e7eb;
+   --ion-background-color: #0f172a;
+   --ion-text-color: #e5e7eb;
 
-  --ion-color-step-50: #020617;
-  --ion-color-step-100: #1e293b;
+   --ion-color-step-50: #020617;
+   --ion-color-step-100: #1e293b;
 
-  --highlight-color: var(--ion-color-secondary);
+   --highlight-color: var(--ion-color-secondary);
 }
 
 :root.dark ion-menu-button {
-  --color: var(--ion-color-tertiary-contrast);
+   --color: var(--ion-color-tertiary-contrast);
 }
