@@ -72,4 +72,11 @@ export class ProjectsComponent implements OnInit {
     this.activeIndex = event.target.swiper.realIndex;
   }
 
+  openSite(url?:string){
+    if(url){
+      window.open(url, '_blank')
+    }
+
+  }
+
 }

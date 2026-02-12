@@ -10,7 +10,7 @@
         <ion-col size="12" size-sm="6" size-lg="4" size-xl="3">
           <ion-card class="project-card">
 
-            <img [src]="project.image" [alt]="project.title" class="project-image" />
+            <img [src]="project.image" [alt]="project.title" class="project-image" (click)="openSite(project.liveUrl)"/>
 
             <ion-card-header>
               <p >{{ project.title }}</p>
@@ -24,7 +24,7 @@
               @if (project.techs?.length) {
               <div class="techs">
                 @for (tech of project.techs; track tech) {
-                <ion-chip>{{ tech }}</ion-chip>
+                <ion-chip color="secondary">{{ tech }}</ion-chip>
                 }
               </div>
               }

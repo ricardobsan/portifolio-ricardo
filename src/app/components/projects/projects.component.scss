@@ -79,31 +79,28 @@ ion-card-content {
 }
 
 ion-chip {
-  color: white;
-  background-color: rgba(31, 6, 255, 0.301);
-  border: 1px solid rgba(6, 10, 255, 0.267);
+  --border-radius: 999px;
+  --padding-start: 10px;
+  --padding-end: 10px;
 
+  border: 1px solid var(--ion-color-secondary);
   font-size: 0.72rem;
 }
 
+
 .project-card {
-  /* Mesma cor de fundo e gradiente */
+
   background: rgba(0, 0, 0, 0.397);
   background-image: linear-gradient(180deg,
       rgba(145, 116, 116, 0.521),
       rgba(255, 255, 255, 0.39));
-
-  /* Formato e Bordas */
   border-radius: 12px;
   border: none;
-  /* Remove a borda padrão do ion-card */
-
-  /* A "mágica" do contorno e sombra que você usou */
   box-shadow:
     0 0 0 1px rgb(6, 0, 10),
     0 6px 16px rgba(0, 0, 0, 0.35);
 
-  /* Ajustes extras para o conteúdo não vazar */
+
   overflow: hidden;
   margin: 8px;
   display: flex;
@@ -111,12 +108,10 @@ ion-chip {
   transition: transform 0.3s ease;
 }
 
-/* Efeito opcional: dar um leve destaque ao passar o mouse */
 .project-card:hover {
   transform: translateY(-5px);
 }
 
-/* Resetando backgrounds internos do Ionic para não sobrepor o gradiente */
 ion-card-header p,
 ion-card-content p {
   background: transparent !important;
@@ -136,7 +131,6 @@ ion-card-content p {
    BOTÕES COM BRILHO INTERNO
 ========================== */
 
-/* Hover mexendo botão */
 .btn-1:hover,
 .btn-2:hover {
   transform: translateY(-2px) scale(1.05);
@@ -154,7 +148,7 @@ ion-card-content p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* FORÇA o elemento interno do Ionic */
+
 .project-actions ion-button::part(native) {
   border-radius: 12px;
 }
@@ -171,7 +165,6 @@ ion-card-content p {
    MOBILE CAROUSEL MODE
 ========================== */
 
-
 @media (max-width: 768px) {
   .projects-wrapper {
     width: 100vw !important; 
@@ -185,18 +178,20 @@ ion-card-content p {
     display: flex !important;
     flex-wrap: nowrap !important;
     overflow-x: auto !important;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: auto !important; 
     
+    scroll-behavior: smooth;
     padding: 10px 10px 30px 10px !important; 
     gap: 0;
-    -webkit-overflow-scrolling: touch;
   }
-
 
   .scroll-horizontal ion-col {
     flex: 0 0 80% !important; 
     max-width: 80% !important;
     scroll-snap-align: center;
+    scroll-snap-stop: always !important; 
+    
     padding: 0 8px !important; 
   }
 
