@@ -161,10 +161,18 @@ ion-card-content p {
 }
 
 
+
 .project-actions ion-button::part(native) {
   border-radius: 12px;
 }
 
+.projects-section {
+  overflow: visible;
+}
+
+.container {
+  overflow: visible;
+}
 
 /* ==========================
    MOBILE CAROUSEL MODE
@@ -207,7 +215,7 @@ ion-card.project-card {
   }
 
   ion-chip {
-    --background: var(--highlight-color);
+    --background: var(--ion-color-tertiary-tint);
     border: none;
   }
 }
