@@ -17,8 +17,6 @@ export class AboutComponent implements OnInit {
       downloadOutline,
       eyeOutline
     })
-
-
   }
 
   ngOnInit() { }

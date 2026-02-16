@@ -45,6 +45,8 @@ constructor(private route: ActivatedRoute) {}
 }
 
 ngAfterViewInit() {
+  this.content.scrollToTop(0);
+
   this.route.fragment.subscribe(fragment => {
     if (fragment) {
       setTimeout(() => {
