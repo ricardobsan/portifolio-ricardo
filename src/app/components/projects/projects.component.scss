@@ -5,25 +5,11 @@ ion-card.project-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 430px;
+  min-height: 430px;
+  max-height: 430px;
   border-radius: 12px;
   overflow: hidden;
-  margin: 8px;
-  transition: transform 0.3s ease;
-
-  background: rgba(0, 0, 0, 0.397);
-  background-image: linear-gradient(
-    180deg,
-    rgba(145, 116, 116, 0.521),
-    rgba(255, 255, 255, 0.39)
-  );
-
-  border: none;
-  box-shadow:
-    0 0 0 1px rgb(6, 0, 10),
-    0 6px 16px rgba(0, 0, 0, 0.35);
 }
-
 
 .tech-title {
   font-size: 1.9rem;
@@ -96,16 +82,8 @@ ion-card-content {
 
 .project-actions ion-button {
   flex: 1;
-  border-radius: 12px;
-  overflow: hidden;
-  --border-radius: 12px;
-  --border-width: 1px;
-  --border-style: solid;
-  --border-color: rgba(0, 0, 0, 0.644);
-  font-size: 0.85rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  --border-radius: 10px;
 }
-
 
 .techs ion-chip {
   white-space: nowrap;
@@ -130,6 +108,25 @@ ion-chip::part(native) {
 }
 
 
+.project-card {
+
+  background: rgba(0, 0, 0, 0.397);
+  background-image: linear-gradient(180deg,
+      rgba(145, 116, 116, 0.521),
+      rgba(255, 255, 255, 0.39));
+  border-radius: 12px;
+  border: none;
+  box-shadow:
+    0 0 0 1px rgb(6, 0, 10),
+    0 6px 16px rgba(0, 0, 0, 0.35);
+
+
+  overflow: hidden;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
 
 .project-card:hover {
   transform: translateY(-5px);
@@ -160,6 +157,16 @@ ion-card-content p {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
+.project-actions ion-button {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: rgba(0, 0, 0, 0.644);
+  font-size: 0.85rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 
 .project-actions ion-button::part(native) {
@@ -211,11 +218,12 @@ ion-card-content p {
 ion-card.project-card {
     margin: 0 !important;
     width: 100%;
-    height: 455px;
+    max-height: 465px !important;
+    min-height: 465px;
   }
 
   ion-chip {
-    --background: #3b74ee;
+    --background: var(--highlight-color);
     border: none;
   }
 }
