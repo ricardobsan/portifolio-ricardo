@@ -14,9 +14,29 @@
           <ion-item (click)="navigate('top')" lines="none">Início</ion-item>
           <ion-item (click)="navigate('about')" lines="none">Sobre mim</ion-item>
           <ion-item (click)="navigate('project')" lines="none">Projetos</ion-item>
-          <ion-item (click)="navigate('top')" lines="none">Contatos</ion-item>
+          <ion-item (click)="navigate('contact')" lines="none">Contatos</ion-item>
         </ion-menu-toggle>
       </ion-list>
+
+
+              <div class="cv-wrapper">
+
+          <h2 class="tech-title highlight">Currículo</h2>
+
+          <div class="cv-buttons">
+            <ion-button fill="solid" href="assets/cv/Ricardo Batista dos Santos.pdf" target="_blank" class="btn-1">
+              <ion-icon slot="start" name="eye-outline"></ion-icon>
+              Visualizar
+            </ion-button>
+
+            <ion-button fill="solid" href="assets/cv/Ricardo Batista dos Santos.pdf" download class="btn-2">
+              <ion-icon slot="start" name="download-outline"></ion-icon>
+              Download
+            </ion-button>
+          </div>
+
+        </div>
+
     </ion-content>
   </ion-menu>
 

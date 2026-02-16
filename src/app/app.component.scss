@@ -1,0 +1,44 @@
+/* ==========================
+   CURRÍCULO - MENU MOBILE
+========================== */
+
+ion-menu .cv-wrapper {
+  margin-top: 28px;
+  padding: 0 16px;
+  text-align: left;
+}
+
+ion-menu .cv-wrapper .tech-title {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+ion-menu .cv-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+ion-menu .cv-buttons ion-button {
+  flex: 1; /* ocupa metade cada */
+  --border-radius: 12px;
+  min-height: 44px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: rgba(0, 0, 0, 0.644);
+  transition: transform 0.25s ease;
+}
+
+ion-menu .btn-1 {
+  --background: var(--ion-color-warning);
+}
+
+ion-menu .btn-2 {
+  --background: var(--ion-color-info);
+}
+
+.tech-title{
+    text-align: center;
+}
