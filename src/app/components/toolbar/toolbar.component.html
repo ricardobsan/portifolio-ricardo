@@ -12,10 +12,10 @@
 
   <!-- MENU DESKTOP -->
   <ion-buttons slot="end" class="desktop-only">
-    <ion-button routerLink="/home">Início</ion-button>
-    <ion-button routerLink="/sobre">Sobre mim</ion-button>
-    <ion-button routerLink="/projetos">Projetos</ion-button>
-    <ion-button routerLink="/contato">Contatos</ion-button>
+    <ion-button (click)="goTo('top')">Início</ion-button>
+    <ion-button (click)="goTo('about')">Sobre mim</ion-button>
+    <ion-button (click)="goTo('project')">Projetos</ion-button>
+    <ion-button (click)="goTo('top')">Contatos</ion-button>
   </ion-buttons>
 
   <!-- DARK MODE (SEMPRE VISÍVEL) -->

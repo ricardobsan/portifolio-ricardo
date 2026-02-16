@@ -1,19 +1,19 @@
 <ion-header>
-  <app-toolbar></app-toolbar>
+  <app-toolbar (navigate)="scrollTo($event)"></app-toolbar>
 </ion-header>
 
 <ion-content fullscreen>
-  <section id="inicio" class="section hero">
+  <section id="top" class="section hero">
     <app-header></app-header>
   </section>
 
-  <section id="sobre" class="section sobre">
+  <section id="about" class="section sobre">
     <app-about></app-about>
   </section>
 
   
  
-  <section id="projetos" class="section projetos">
+  <section id="project" class="section projetos">
     <app-projects></app-projects>
   </section>
 

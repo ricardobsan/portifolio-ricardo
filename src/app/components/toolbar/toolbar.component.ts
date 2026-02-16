@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { addIcons } from 'ionicons';
 import { moon, sunnyOutline } from 'ionicons/icons';
 import { IonButtons, IonMenuButton, IonButton, IonIcon, IonToolbar } from "@ionic/angular/standalone";
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -10,6 +11,8 @@ import { IonButtons, IonMenuButton, IonButton, IonIcon, IonToolbar } from "@ioni
   imports: [IonButtons, IonMenuButton, IonButton, IonIcon, IonToolbar],
 })
 export class ToolbarComponent implements OnInit {
+  
+@Output() navigate = new EventEmitter<string>();
 
   isDark = false;
 
@@ -44,5 +47,11 @@ private enableLight() {
   localStorage.setItem('theme', 'light');
   this.isDark = false;
 }
+
+goTo(sectionId: string) {
+  this.navigate.emit(sectionId);
+}
+
+
 
 }

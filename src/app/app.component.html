@@ -1,17 +1,17 @@
 <ion-app>
   <ion-menu contentId="main-content" type="overlay">
     <ion-header>
-      <ion-toolbar>
-        <ion-title>Menu</ion-title>
+      <ion-toolbar (click)="navigate('top')">
+        <ion-title >Ricardo Santos</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
       <ion-list>
-        <ion-item routerLink="/home" lines="none">Início</ion-item>
-        <ion-item routerLink="/sobre" lines="none">Sobre mim</ion-item>
-        <ion-item routerLink="/projetos" lines="none">Projetos</ion-item>
-        <ion-item routerLink="/contato" lines="none">Contatos</ion-item>
+        <ion-item (click)="navigate('top')" lines="none">Início</ion-item>
+        <ion-item (click)="navigate('about')" lines="none">Sobre mim</ion-item>
+        <ion-item (click)="navigate('project')" lines="none">Projetos</ion-item>
+        <ion-item (click)="navigate('top')" lines="none">Contatos</ion-item>
       </ion-list>
     </ion-content>
   </ion-menu>
