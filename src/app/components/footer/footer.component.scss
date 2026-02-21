@@ -1,3 +1,14 @@
+
+ion-footer{
+    margin-top: 50px;
+}
+
+.container {
+    text-align: center;
+    min-height: 100px;
+}
+
+
 @media (max-width: 768px) {
     p {
         min-height: 20px;
@@ -7,10 +18,4 @@
         justify-content: center;
         text-align: center;
     }
-
-}
-
-.container {
-    text-align: center;
-    min-height: 100px;
 }
